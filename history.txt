@@ -1,0 +1,125 @@
+  503  tree
+  504  pwd
+  505  cd /home/ubuntu/PSET1/p1_basic_unix
+  506  cd /home/ubuntu/PSET1/p1_basic_unix
+  507  cd /home/ubuntu/PSET1/p1_basic_unix
+  508  cd /home/ubuntu/PSET1/PSET1/p1_basic_unix
+  509  touch test\ 1.txt test\ 2.txt test\ 3.txt
+  510  ls -l
+  511  echo "Dusan Pantich - 01-18-25" > test\ 1.txt
+  512  cat test\ 1.txt
+  513  cat test\ 1.txt
+  514  ls -l test\ 1.txt > test\ 2.txt
+  515  cat test\ 2.txt
+  516  chmod +x test\ 1.txt
+  517  ls -l test\ 1.txt
+  518  ls -l test\ 1.txt >> test\ 2.txt
+  519  cat test\ 2.txt
+  520  wget https://zhwangs.github.io/UCSB-comp-phys/problemset/
+  521  sha256sum P1\ B.tar.gz
+  522  ls
+  523  sha256sum index.html
+  524  tar -xzvf P1\ B.tar.gz
+  525  tar -xzvf index.html
+  526  wget https://zhwangs.github.io/UCSB-comp-phys/data/problem_set/P1_B.tar.gz
+  527  ls
+  528  rm index.html
+  529  ls
+  530  sha256sum P1_B.tar.gz
+  531  tar -xzvf P1\ B.tar.gz
+  532  tar -xzvf P1_B.tar.gz
+  533  tar -xzvf P1_B.tar.gz.1
+  534  ls -l
+  535  mv P1\ B/example.sh .
+  536  mv P1_B/example.sh .
+  537  ls -l
+  538  mv P1_B/example\ 1.txt P1_B/demo\ 1.txt
+  539  mv P1_B/example\ 2.txt P1_B/demo\ 2.txt
+  540  mv P1_B/example_2.txt P1_B/demo_2.txt
+  541  ls -l
+  542  mv P1_B/example1.txt P1_B/demo_1.txt
+  543  mv P1_B/example2.txt P1_B/demo_2.txt
+  544  mv P1_B/demo\ 1.txt src/exe/
+  545  mv P1_B/demo\ 2.txt cache/data/tables/
+  546  mv P1_B/demo_1.txt src/exe/
+  547  mv P1_B/demo_1.txt /home/ubuntu/PSET1/PSET1/src/exe/
+  548  mv P1_B/demo_2.txt home/ubuntu/cache/data/tables/
+  549  mv P1_B/demo_2.txt home/ubuntu/PSET1/PSET1/cache/data/tables/
+  550  mv P1_B/demo_2.txt /home/ubuntu/PSET1/PSET1/cache/data/tables/
+  551  ls -l src/exe/
+  552  ls -l cache/data/tables/
+  553  ls -l /home/ubuntu/PSET1/PSET1/src/exe/
+  554  ls -l /home/ubuntu/PSET1/PSET1/cache/data/tables/
+  555  ls -l P1_B/
+  556  rm -r P1_B
+  557  ls -l
+  558  ln -s src/exe/demo\ 1.txt demo_link
+  559  ls -l
+  560  cat demo_link
+  561  cat /home/ubuntu/PSET1/PSET1/p1_basic_unix/demo_link
+  562  cat /home/ubuntu/PSET1/PSET1/p1_basic_unix/demo_link
+  563  ln -s /home/ubuntu/PSET1/PSET1/src/exe/demo\ 1.txt demo_link
+  564  rm demo_link
+  565  ln -s /home/ubuntu/PSET1/PSET1/src/exe/demo_1.txt demo_link
+  566  ls -l
+  567  cat demo_link
+  568  alias ll='ls -l'
+  569  nano ~/.bashrc
+  570  source ~/.bashrc
+  571  ll
+  572  grep "statistics" src/exe/demo\ 1.txt > grep_stat_demo1.txt
+  573  touch grep_stat_demo1.txt
+  574  grep "statistics" src/exe/demo\ 1.txt > grep_stat_demo1.txt
+  575  grep "statistics" /home/ubunu/PSET1/PSET1/src/exe/demo_1.txt > grep_stat_demo1.txt
+  576  grep "statistics" /home/ubuntu/PSET1/PSET1/src/exe/demo_1.txt > grep_stat_demo1.txt
+  577  mv grep_stat_demo1.txt src/utilities/
+  578  mv grep_stat_demo1.txt /home/ubuntu/PSET1/PSET1/src/utilities/
+  579  ls -l src/utilities/
+  580  ls -l /home/ubuntu/PSET1/PSET1/src/utilities/
+  581  cat /home/ubuntu/PSET1/PSET1/src/utilities/grep_stat_demo1.txt
+  582  touch grep_stat_all.txt
+  583  grep -r "statistics" . --include="*.txt" > grep_stat_all.txt
+  584  grep -r "statistics" . --include="*.txt" --exclude="cache/images/grep_stat_all.txt" > cache/images/grep_stat_all.txt
+  585  grep -r "statistics" . --include="*.txt" --exclude="/home/ubuntu/PSET1/PSET1/cache/images/grep_stat_all.txt" > cache/images/grep_stat_all.txt
+  586  grep -r "statistics" . --include="*.txt" --exclude="/home/ubuntu/PSET1/PSET1/cache/images/grep_stat_all.txt" > /home/ubuntu/PSET1/PSET1/cache/images/grep_stat_all.txt
+  587  grep -r "statistics" . --include="*.txt" --exclude="/home/ubuntu/PSET1/PSET1/cache/images/grep_stat_all.txt" > /home/ubuntu/PSET1/PSET1/cache/images/grep_stat_all.txt
+  588  ls -l /home/ubuntu/PSET1/PSET1/cache/images/
+  589  ls -l /home/ubuntu/PSET1/PSET1/cache/images/
+  590  grep -r "statistics" . --include="*.txt" --exclude="grep_stat_all.txt" > tmp_grep_stat_all.txt
+  591  mv tmp_grep_stat_all.txt cache/images/grep_stat_all.txt
+  592  touch tmp_grep_stat_all.txt
+  593  mv tmp_grep_stat_all.txt cache/images/grep_stat_all.txt
+  594  mv tmp_grep_stat_all.txt /home/ubuntu/PSET1/PSET1/cache/images/grep_stat_all.txt
+  595  ls -l
+  596  cat tmp_grep_stat_all.txt
+  597  cat grep_stat_all.txt
+  598  grep -r "statistics" . --include="*.txt" > grep_stat_all.txt
+  599  grep -r "statistics" . --include="*.txt" > tmp_grep_stat_all.txt
+  600  grep -r "statistics" . --include="*.txt" --exclude="grep_stat_all.txt" tmp_grep_stat_all.txt
+  601  mv tmp_grep_stat_all.txt /home/ubuntu/PSET1/PSET1/cache/images/grep_stat_all.txt
+  602*  find . -type f -name "*.txt" > test3.txt
+  603  cat test\ 3.txt
+  604  ls -l test\ 3.txt
+  605  find . -type f -name "*.txt" -exec grep -H "statistics" {} \;
+  606  tar -czvf p1_basic_unix.tar.gz p1_basic_unix/
+  607  tar -czvf p1_basic_unix.tar.gz /home/ubuntu/PSET1/PSET1/p1_basic_unix/
+  608  ls -l p1_basic_unix.tar.gz
+  609  sha256sum p1_basic_unix.tar.gz > sha256sum_p1.txt
+  610  cat sha256sum_p1.txt
+  611  cd ..
+  612  mkdir ~/Archive_P1
+  613  cd ~/Archive_P1
+  614  git init
+  615  mv ~/p1_basic_unix.tar.gz ~/sha256sum_p1.txt .
+  616  mv /home/ubuntu/PSET1/PSET1/p1_basic_unix/p1_basic_unix.tar.gz /home/ubuntu/PSET1/PSET1/p1_basic_unix//sha256sum_p1.txt .
+  617  ls -l
+  618  git add .
+  619  git commit -m "Problem 1"
+  620  git remote add origin https://github.com/dpantich/Archive_P1
+  621  git remote -v
+  622  git push -u origin main
+  623  git branch -M main
+  624  git push -u origin main
+  625  history
+  626  touch history.txt
+  627  history | tail -n 125 >> history.txt
