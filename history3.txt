@@ -1,0 +1,9 @@
+  536  cd /home/ubuntu/PSET1/P3
+  537  nano convert_numbers.sh
+  538  chmod +x convert_numbers.sh
+  539  ./convert_numbers.sh
+  540  cat conversion_result.txt
+  541  tar -czvf P3.tar.gz /home/ubuntu/PSET1/P3
+  542  tar -czvf P3.tar.gz /home/ubuntu/PSET1/P3/
+  543  touch history3.txt
+  544  history | tail -n 9 >> history3.txt

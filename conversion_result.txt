@@ -1,0 +1,3 @@
+Decimal: 42
+Binary: 101010
+Hexadecimal: 2A
