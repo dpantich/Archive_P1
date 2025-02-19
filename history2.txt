@@ -1,0 +1,28 @@
+  502  mkdir -p odd even
+  503  nano sort_files.sh
+  504  chmod +x sort_files.sh
+  505  ./sort_files.sh
+  506  ls -l odd/
+  507  ls -l even/
+  508  tar -czvf P2.tar.gz P2/
+  509  tar -czvf P2.tar.gz /home/ubuntu/PSET1/P2
+  510  ls -l P2.tar.gz
+  511  sha256sum P2.tar.gz > sha256sum_P2.txt
+  512  cat sha256sum_P2.txt
+  513  mkdir /home/ubuntu/Archive_P2
+  514  cd /home/ubuntu/Archive_P2
+  515  git init
+  516  mv /home/ubuntu/PSET1/P2/P2.tar.gz /home/ubuntu/PSET1/P2/sha256sum_P2.txt .
+  517  ls -l
+  518  git add .
+  519  git commit -m "Problem 2"
+  520  git remote -v
+  521  git remote add origin https://github.com/dpantich/Archive_P1.git
+  522  git remote -v
+  523  git branch -M main
+  524  git push -u origin main
+  525  git pull origin main --rebase
+  526  git push origin main
+  527  history
+  528  touch history2.txt
+  529  history | tail -n 28 >> history2.txt
